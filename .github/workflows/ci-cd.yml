@@ -63,4 +63,4 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl set image deployment/nginx-test-app nginx-test-app=juliejool/nginx-test-app:v7.0 -n test-app
+          kubectl set image deployment/nginx-test-app nginx-test-app=juliejool/nginx-app:latest -n test-app
