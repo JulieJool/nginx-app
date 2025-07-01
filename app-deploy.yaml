@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: nginx-test-app
-        image: juliejool/nginx-test-app:latest
+        image: juliejool/nginx-app:latest
         ports:
         - containerPort: 80
 
