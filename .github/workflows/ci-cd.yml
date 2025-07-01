@@ -46,4 +46,4 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl set image deployment/nginx-deployment nginx=${{ secrets.DOCKERHUB_USERNAME }}/nginx-app:${{ github.ref_name }} --record
+          kubectl set image deployment/nginx-deployment nginx=${{ secrets.DOCKERHUB_USERNAME }}/nginx-app:${{ github.ref_name }}
