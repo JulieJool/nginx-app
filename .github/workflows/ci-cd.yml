@@ -44,6 +44,13 @@ jobs:
           sudo apt-get update && sudo apt-get install -y curl
           curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh  | bash
 
+      - name: Apply bashrc changes
+        run: |
+          source "/home/runner/.bashrc"
+
+      - name: Verify yc installation
+        run: yc --version
+
       - name: Authorize Yandex Cloud CLI
         run: |
           yc config set token ${{ secrets.YC_TOKEN }}
